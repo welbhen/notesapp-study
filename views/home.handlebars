@@ -1,0 +1,24 @@
+<div id="stickyNotes">
+	{{#each posts}}
+		<textarea id="note{{id}}" class="note">{{content}}</textarea>
+		<script type="text/javascript">
+		document.getElementById("note{{id}}").onclick = () => {
+			const doDelete = confirm("Are you sure you want to delete this note?");
+			if(doDelete){
+				location.href = "/delete/{{id}}";
+			}
+		};
+		</script>
+		<!-- OLD DELETE BUTTON:
+		<a href="/delete/{{id}}"><button class="del-bt" type="button">&#10006</button></a>
+		-->
+		
+	{{/each}}
+		
+		<button id="add-note-bt" class="add-note" type="button">+</button>
+		<script type="text/javascript">
+			document.getElementById("add-note-bt").onclick = () => {
+					location.href = "./notes";	        
+		    };
+		</script>
+</div>	

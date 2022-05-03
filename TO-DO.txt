@@ -1,0 +1,9 @@
+	(X) 1 - Make the CSS button work directly with the /notes;
+	
+	( ) 2 - Make it possible to update notes
+		a - by just editing the text and clicking outside the note
+		OR
+		b - by using a 'save' button 
+	
+	(X) 3 - Create a click on note and /delete route;
+	
